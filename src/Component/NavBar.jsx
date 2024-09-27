@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="bd-example m-0 border-0">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> {/* Use bg-dark and navbar-dark */}
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand text-white" to="/">
             Healthcare Services
           </Link>
           <button
@@ -20,24 +20,19 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link to="/" className="nav-link" aria-current="page">
+                <Link to="/" className="nav-link text-white" aria-current="page">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/service-list" className="nav-link">
+                <Link to="/service-list" className="nav-link text-white">
                   Service List
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact-us" className="nav-link">
+                <Link to="/contact-us" className="nav-link text-white">
                   Contact Us
                 </Link>
               </li>

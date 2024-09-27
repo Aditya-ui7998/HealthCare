@@ -6,7 +6,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ServiceList from "./Component/ServiceList.jsx";
-import About from "./Component/About.jsx";
 import ContactForm from "./Component/ContactForm.jsx";
 import HeroSection from "./Component/HeroSection.jsx";
 
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HeroSection /> },
       { path: "/service-list", element: <ServiceList /> },
-      { path: "/about", element: <About /> },
       { path: "/service-list", element: <ServiceList /> },
       { path: "/contact-us", element: <ContactForm /> },
     ],

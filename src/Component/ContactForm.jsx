@@ -36,40 +36,39 @@ function ContactForm() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2>Contact Us for Healthcare Services</h2>
+    <div className="container mt-5 text-white bg-dark p-4 rounded"> {/* Changed background and text color */}
+      <h2 className="mb-4">Contact Us for Healthcare Services</h2>
       <form noValidate validated={validated.toString()} onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-md-6 mb-3">
-            <label htmlFor="firstName">First Name</label>
-            <input
-              type="text"
-              className="form-control"
-              id="firstName"
-              name="firstName"
-              required
-              value={formData.firstName}
-              onChange={handleChange}
-            />
-            <div className="invalid-feedback">First name is required.</div>
-          </div>
-
-          <div className="col-md-6 mb-3">
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              type="text"
-              className="form-control"
-              id="lastName"
-              name="lastName"
-              required
-              value={formData.lastName}
-              onChange={handleChange}
-            />
-            <div className="invalid-feedback">Last name is required.</div>
-          </div>
-        </div>
         <div className="mb-3">
-          <label htmlFor="email">Email Address</label>
+          <label htmlFor="firstName" className="form-label">First Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="firstName"
+            name="firstName"
+            required
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+          <div className="invalid-feedback">First name is required.</div>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="lastName" className="form-label">Last Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="lastName"
+            name="lastName"
+            required
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+          <div className="invalid-feedback">Last name is required.</div>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email Address</label>
           <input
             type="email"
             className="form-control"
@@ -85,7 +84,7 @@ function ContactForm() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="phone">Phone Number</label>
+          <label htmlFor="phone" className="form-label">Phone Number</label>
           <input
             type="tel"
             className="form-control"
@@ -101,7 +100,7 @@ function ContactForm() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="reason">Reason for Contact</label>
+          <label htmlFor="reason" className="form-label">Reason for Contact</label>
           <select
             className="form-select"
             id="reason"
@@ -122,7 +121,7 @@ function ContactForm() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="message">Message (Optional)</label>
+          <label htmlFor="message" className="form-label">Message (Optional)</label>
           <textarea
             className="form-control"
             id="message"
@@ -132,8 +131,9 @@ function ContactForm() {
             onChange={handleChange}
           ></textarea>
         </div>
+
         <div className="mb-3">
-          <label>Preferred Contact Method</label>
+          <label className="form-label">Preferred Contact Method</label>
           <div className="form-check">
             <input
               className="form-check-input"
@@ -164,7 +164,7 @@ function ContactForm() {
           </div>
         </div>
 
-        <button className="btn btn-primary" type="submit">
+        <button className="btn btn-danger" type="submit"> {/* Changed button color to red */}
           Submit
         </button>
       </form>

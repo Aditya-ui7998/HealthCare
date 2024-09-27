@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import img from "../assets/image.png";
+import img from "../assets/doc2.png";
 import { Link } from "react-router-dom";
 
 function HeroSection() {
@@ -14,12 +14,14 @@ function HeroSection() {
       }}
     >
       <div className="text-center text-black">
-        <h1 className="display-3">Compassionate Care for Everyone</h1>
+        <h1 className="display-3 fw-bold"> {/* Added fw-bold */}
+          Compassionate Care for Everyone
+        </h1>
         <p className="lead">
           Your health is our priority. We offer comprehensive healthcare
           services with personalized attention.
         </p>
-        <Link to={"/service-list"} className="btn btn-primary btn-lg mt-4">
+        <Link to={"/service-list"} className="btn btn-danger btn-lg mt-4">
           Service List
         </Link>
       </div>

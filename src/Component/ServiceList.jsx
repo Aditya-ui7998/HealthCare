@@ -46,7 +46,7 @@ const ServiceList = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 text-white"> {/* Added text-white class */}
       <h1 className="text-center mb-4">Healthcare Services</h1>
 
       <form onSubmit={handleSubmit} className="mb-4">
