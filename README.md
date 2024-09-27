@@ -30,7 +30,7 @@ A simple and responsive web application for healthcare services, built using Rea
 1. Clone the repository:
 
    
-   git clone [https://github.com/aadityaexe/healthcare-services]
+   git clone [https://github.com/Aditya-ui7998/HealthCare]
    cd healthcare-services-app
   
 Install dependencies:
